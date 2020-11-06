@@ -3,11 +3,23 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "C/C++: cl.exe build active file",
+			"label": "Compiling resource file",
+			"command": "rc.exe",
+			"args": [
+				"/r",
+				"iconHider.rc"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "MSVC - active - relfastnodbg",
 			"command": "cl.exe",
 			"args": [
-				"/Zi",
-				"/EHsc",
+				"/O2",
+				"/GA",
+				"/GL",
+				"/Gw",
+				"${fileDirname}\\${fileBasenameNoExtension}.res",
 				"/Fe:",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe",
 				"${file}"
@@ -21,7 +33,32 @@
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			}
+			},
+            "dependsOn":["Compiling resource file"]
+		}
+		{
+			"type": "shell",
+			"label": "MSVC - active - debug",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"${fileDirname}\\${fileBasenameNoExtension}.res",
+				"/Fe:",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"${file}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+            "dependsOn":["Compiling resource file"]
 		}
 	]
 }

@@ -1,6 +1,6 @@
 # iconHider
 
-### Simple program that hide/show the icons of Windows desktp.
+### Simple program that hide/show the icons of Windows desktop.
 
 ## Summary
   - [Usage](#usage)
