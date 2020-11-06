@@ -35,7 +35,7 @@
 				"isDefault": true
 			},
             "dependsOn":["Compiling resource file"]
-		}
+		},
 		{
 			"type": "shell",
 			"label": "MSVC - active - debug",

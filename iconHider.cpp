@@ -117,12 +117,12 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		if (strcmp(argv[1], "test") == 0)
+		if (strcmp(argv[1], "-test") == 0)
 		{
 			EnumChildWindows(GetDesktopWindow(), *EnumChildProcFull, 0x123);
 			system("PAUSE");
 		}
-		else if (strcmp(argv[1], "hax") == 0)
+		else if (strcmp(argv[1], "-hax") == 0)
 		{
 			EnumChildWindows(GetDesktopWindow(), *EnumChildProc, 0x123);
 			if (hwndSysListView32 != NULL)
@@ -135,7 +135,7 @@ int main(int argc, char **argv)
 				system("PAUSE");
 			}
 		}
-		else if (strcmp(argv[1], "api") == 0)
+		else if (strcmp(argv[1], "-api") == 0)
 		{
 			hideWithAPI();
 		}
