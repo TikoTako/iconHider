@@ -11,7 +11,7 @@
   - [License](#license)
 
 ## Binary
-  The compiled executable can be downloaded >> [HERE](https://github.com/TikoTako/iconHider/releases/) <
+  The compiled executable can be downloaded >> [HERE](https://github.com/TikoTako/iconHider/releases/) <<
 
 ## Usage
 The help will show up in case of opening it with dbclick, anyway:
