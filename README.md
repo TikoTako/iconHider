@@ -1,4 +1,4 @@
-# iconHider
+# <img src="iconHider.ico" width="96"> iconHider
 
 ### Simple program that hide/show the icons of Windows desktop.
 
@@ -22,7 +22,8 @@ The help will show up in case of opening it with dbclick, anyway:
 |-test|Just print out all the child of the desktop, nothing more.|
 |-api|hide/show the icons using the windows api.|
 |-hax|workaround to hide/show the icons (for some reason the api don't work)|
-<br />example:
+
+example:
 
     iconHider.exe -hax
 
