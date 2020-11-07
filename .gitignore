@@ -1,5 +1,7 @@
-### COMPILED RC ###
+### Compiled rc file & the directory that i use for screenshots ###
 *.res
+img/
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,c++,c
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,c++,c
