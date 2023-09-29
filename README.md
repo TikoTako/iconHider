@@ -48,6 +48,9 @@ So the workaround is to hide "SysListView32" but as you can see from the two scr
 
 ## Authors
   - **TikoTako** - [TikoTako](https://github.com/TikoTako)
+  - 
+## Donations
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I0PNUUU)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
